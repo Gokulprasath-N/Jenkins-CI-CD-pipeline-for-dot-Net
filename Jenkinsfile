@@ -52,7 +52,7 @@ pipeline {
                     }
                 }
                 // Archive the zip file
-                archiveArtifacts 'MySimpleCoreProject.zip'
+                archiveArtifacts 'bin/Release/net8.0/publish/MySimpleCoreProject.zip'
             }
         }
     }
