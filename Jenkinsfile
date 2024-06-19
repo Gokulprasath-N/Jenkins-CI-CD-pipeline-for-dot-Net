@@ -41,7 +41,7 @@ pipeline {
                 script {
                     // Create a zip archive of the desired folder
                     dir('bin/Release/net8.0/publish') { // Replace with actual path
-                        zip zipFile: 'MySimpleCoreProject.zip', archive: false, glob: 'bin/Release/net8.0/publish/**'
+                        zip zipFile: 'MySimpleCoreProject.zip', archive: false, glob: '**'
                     }
                 }
                 // Archive the zip file
