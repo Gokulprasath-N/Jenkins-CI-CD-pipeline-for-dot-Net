@@ -9,6 +9,13 @@ pipeline {
                     url: 'https://github.com/Gokulprasath-N/simple_asp.net_project.git' // Replace with your GitHub URL
             }
         }
+        stage('clean Project') {
+            steps {
+                script {
+                    sh 'dotnet clean MySimpleCoreProject.csproj' // Replace with your project's build command
+                }
+            }
+        }
         stage('Build Project') {
             steps {
                 script {
