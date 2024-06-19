@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     // Use the appropriate .NET command for your project (e.g., dotnet build, msbuild)
-                    sh 'dotnet build MyProject.sln' // Replace with your project's build command
+                    sh 'dotnet build MySimpleCoreProject.csproj' // Replace with your project's build command
                 }
             }
         }
@@ -31,7 +31,7 @@ pipeline {
             steps {
                 script {
                     // Use the appropriate .NET command for your project (e.g., dotnet build, msbuild)
-                    sh 'dotnet publish MyProject.sln' // Replace with your project's build command
+                    sh 'dotnet publish MySimpleCoreProject.csproj' // Replace with your project's build command
                 }
             }
         }
@@ -41,11 +41,11 @@ pipeline {
                 script {
                     // Create a zip archive of the desired folder
                     dir('bin/Release/net8.0/publish') { // Replace with actual path
-                        zip zipFile: 'myproject.zip', archive: false, glob: 'bin/Release/net8.0/publish/**'
+                        zip zipFile: 'MySimpleCoreProject.zip', archive: false, glob: 'bin/Release/net8.0/publish/**'
                     }
                 }
                 // Archive the zip file
-                archiveArtifacts 'myproject.zip'
+                archiveArtifacts 'MySimpleCoreProject.zip'
             }
         }
     }
