@@ -5,8 +5,8 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'main', // Replace with your branch name
-                    credentialsId: 'your-github-credentials-id', // Replace with your credential ID
-                    url: 'https://github.com/your-username/your-repository.git' // Replace with your GitHub URL
+                    credentialsId: 'de344b0b-23c5-4ab6-9300-7b0025de93ea', // Replace with your credential ID
+                    url: 'https://github.com/Gokulprasath-N/simple_asp.net_project.git' // Replace with your GitHub URL
             }
         }
         stage('Build Project') {
