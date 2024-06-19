@@ -1,0 +1,7 @@
+C:\Users\GOKUL KARTHI\Desktop\.net\MySimpleCoreProject\bin\Release\net8.0\publish\MySimpleCoreProject.exe
+C:\Users\GOKUL KARTHI\Desktop\.net\MySimpleCoreProject\bin\Release\net8.0\publish\appsettings.Development.json
+C:\Users\GOKUL KARTHI\Desktop\.net\MySimpleCoreProject\bin\Release\net8.0\publish\appsettings.json
+C:\Users\GOKUL KARTHI\Desktop\.net\MySimpleCoreProject\bin\Release\net8.0\publish\MySimpleCoreProject.dll
+C:\Users\GOKUL KARTHI\Desktop\.net\MySimpleCoreProject\bin\Release\net8.0\publish\MySimpleCoreProject.deps.json
+C:\Users\GOKUL KARTHI\Desktop\.net\MySimpleCoreProject\bin\Release\net8.0\publish\MySimpleCoreProject.runtimeconfig.json
+C:\Users\GOKUL KARTHI\Desktop\.net\MySimpleCoreProject\bin\Release\net8.0\publish\MySimpleCoreProject.pdb
