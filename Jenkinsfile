@@ -16,6 +16,15 @@ pipeline {
                 }
             }
         }
+
+        stage('Delete Files (Caution!)') {
+            steps {
+                sh '''
+                    rm -rf bin/Release/net8.0/publish*  # Delete all files in the folder
+                '''
+            }
+        }
+        
         stage('Build Project') {
             steps {
                 script {
