@@ -72,9 +72,5 @@ pipeline {
                 credentialsId: 'e54bce0f-3a3e-4ec3-bd2e-aec353a5fbc2'
             ]
         }
-        stage('Upload File') {
-            sshPut(remote: remoteServer, from: 'bin/Release/net8.0/publish/MySimpleCoreProject.zip', into: '/home/ubuntu/myapp')
-        }
-
     }
 }
