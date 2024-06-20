@@ -64,13 +64,5 @@ pipeline {
                 archiveArtifacts 'bin/Release/net8.0/publish/MySimpleCoreProject.zip'
             }
         }
-
-        stage('Define SSH Connection') {
-            def remoteServer = [
-                host: '3.91.233.209',
-                user: 'ubuntu',
-                credentialsId: 'e54bce0f-3a3e-4ec3-bd2e-aec353a5fbc2'
-            ]
-        }
     }
 }
